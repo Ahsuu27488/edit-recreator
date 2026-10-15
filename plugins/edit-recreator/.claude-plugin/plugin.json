@@ -1,7 +1,7 @@
 {
   "name": "edit-recreator",
   "displayName": "Edit Recreator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Recreate a short-form video edit (TikTok/Reels/CapCut/After Effects template) frame-accurately in Remotion with your own footage: measured cuts, retiming, transitions, text and framing, checked frame by frame against the reference.",
   "author": {
     "name": "Muhammad Ahsan",

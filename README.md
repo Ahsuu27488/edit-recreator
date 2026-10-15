@@ -11,6 +11,12 @@ Then it **checks its own render against the reference, side by side, frame by fr
 It was built while recreating a real birthday edit (a viral After Effects template that needed paid plugins
 we didn't have), and it packages everything that made that work: the tools, the method and the mistakes.
 
+![Original edit (left) and the Remotion recreation (right), same footage](docs/demo.gif)
+
+*Left: the original edit. Right: our Remotion recreation of it from the same template footage.
+Original edit by Rehan Shaikh, Rs Tech 07 ([YouTube @rstech7](https://youtube.com/@rstech7),
+[Instagram @rs_tech_07](https://instagram.com/rs_tech_07)), shown with credit. The original project, its assets and its song are not included in this repository.*
+
 ## What it does
 
 - **Analyses the reference**: every frame (no gaps), a per-frame motion profile that finds every transition

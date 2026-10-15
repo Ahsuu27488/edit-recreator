@@ -3,7 +3,7 @@ name: recreate-edit
 description: "Recreate a short-form video edit (TikTok / Reels / Shorts / CapCut / After Effects template) frame-accurately in Remotion, with the person's own photos and clips swapped in. Use when someone gives a reference edit and wants 'the same edit but with my footage': matching cuts, timing, slow motion, text, effects and framing, checked frame by frame against the reference."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   requires: "ffmpeg, Node 18+, Python 3.10+, Remotion 4"
 ---
 

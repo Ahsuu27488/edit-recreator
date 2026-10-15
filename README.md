@@ -37,6 +37,9 @@ claude plugin install edit-recreator@edit-recreator
 ```
 Then ask Claude: *"Recreate this edit with my clips"* and point it at your reference video and footage.
 
+**Examples of use**, from the full "same edit, my clips" job to single tasks like finding every transition,
+checking sync or getting clean cut-outs: [EXAMPLES.md](plugins/edit-recreator/EXAMPLES.md).
+
 **As a plain skill**: copy `plugins/edit-recreator/skills/recreate-edit/` to `~/.claude/skills/recreate-edit/`.
 
 ### Requirements

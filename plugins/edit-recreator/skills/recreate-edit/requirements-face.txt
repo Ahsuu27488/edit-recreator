@@ -1,0 +1,6 @@
+# Optional: face tracking (face_track.py, analyze_media.py, prep_slots face boxes) and GFPGAN face restore.
+torch
+torchvision
+facexlib>=0.3
+gfpgan>=1.3.8
+basicsr>=1.4.2

@@ -1,0 +1,10 @@
+{
+  "composition": "MyEdit",
+  "entry": "src/index.ts",
+  "reference": "../reference/ref.mp4",
+  "offset": 0,
+  "fps": 30,
+  "props": { "variant": "original" },
+  "python": "../.venv/bin/python",
+  "textChecks": [["TITLE", 120], ["Name", 600]]
+}

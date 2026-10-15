@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+work/
+*.mp4
+*.mov
+*.mp3
+*.onnx
+*.pth
+.DS_Store

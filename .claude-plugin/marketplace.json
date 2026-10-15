@@ -1,0 +1,12 @@
+{
+  "name": "edit-recreator",
+  "description": "Recreate any short-form video edit in Remotion with your own footage, frame by frame.",
+  "owner": { "name": "Muhammad Ahsan", "url": "https://github.com/Ahsuu27488" },
+  "plugins": [
+    {
+      "name": "edit-recreator",
+      "source": "./plugins/edit-recreator",
+      "description": "Skill + scripts to rebuild a reference edit frame-accurately in Remotion with your own clips."
+    }
+  ]
+}

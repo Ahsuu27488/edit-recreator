@@ -1,0 +1,15 @@
+# Never commit the person's media, the reference edit, music, or anything generated.
+media/
+reference/
+work/
+out/
+output/
+remotion/public/slots/
+remotion/out/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.aep
+.venv/
+node_modules/

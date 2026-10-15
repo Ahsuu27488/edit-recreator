@@ -1,0 +1,7 @@
+{
+  "_note": "One entry per scene. Paths are relative to this file. Times in seconds. See reference/media.md.",
+  "s01_open":   {"src": "clips/clip_a.mp4", "start": 4.0, "dur": 1.2, "interp": 4},
+  "s02_photo":  {"src": "photos/portrait.png", "dur": 2.0, "cut": true, "model": "birefnet"},
+  "s03_title":  {"src": "clips/clip_d.mp4", "start": 5.6, "dur": 0.5, "cut": true, "model": "birefnet", "interp": 4},
+  "s04_room":   {"src": "clips/clip_b.mp4", "start": 2.0, "dur": 1.9, "rotate": 270, "interp": 4}
+}

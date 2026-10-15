@@ -1,0 +1,7 @@
+# Core: analysis sheets, cut-outs (BiRefNet via onnxruntime, or rembg models), masks, motion profile.
+pillow>=10
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.8
+onnxruntime>=1.16
+rembg>=2.0.50

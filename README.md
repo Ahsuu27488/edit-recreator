@@ -11,6 +11,8 @@ The song belongs to its rights holders.*
 
 **Full 21.6 s side-by-side, with sound:**
 
+*The end card was re-edited too: the creator's "R3EDIT / Do Follow" outro is replaced with sample text ("HAPPY BIRTHDAY" and a placeholder name), to show that the outro can carry any wish or name you want. It is mock-up text for the demo, not a real message.*
+
 https://github.com/user-attachments/assets/0fc53d79-6d5c-448a-9282-e66379079776
 
 `edit-recreator` is a [Claude Code](https://claude.com/claude-code) skill and plugin for recreating short-form

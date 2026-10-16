@@ -30,5 +30,9 @@
     "real-esrgan",
     "claude-code",
     "skill"
-  ]
+  ],
+  "documentationUrl": "https://github.com/Ahsuu27488/edit-recreator/blob/main/plugins/edit-recreator/skills/recreate-edit/SKILL.md",
+  "supportUrl": "https://github.com/Ahsuu27488/edit-recreator/issues",
+  "privacyPolicyUrl": "https://github.com/Ahsuu27488/edit-recreator/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/Ahsuu27488/edit-recreator/blob/main/LICENSE"
 }

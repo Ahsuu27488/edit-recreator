@@ -2,7 +2,7 @@
   "name": "edit-recreator",
   "displayName": "Edit Recreator",
   "version": "0.1.4",
-  "description": "Recreate a short-form video edit (TikTok/Reels/CapCut/After Effects template) frame-accurately in Remotion with your own footage: measured cuts, retiming, transitions, text and framing, checked frame by frame against the reference.",
+  "description": "Recreate any TikTok, Reels, Shorts, CapCut or After Effects template edit with your own photos and clips, frame by frame in Remotion. No After Effects or paid plugins needed: Claude measures every cut, transition, speed ramp, text and framing, then checks its render against the reference until they match.",
   "author": {
     "name": "Muhammad Ahsan",
     "url": "https://github.com/Ahsuu27488"

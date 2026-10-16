@@ -1,7 +1,7 @@
 {
   "name": "edit-recreator",
   "displayName": "Edit Recreator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Recreate a short-form video edit (TikTok/Reels/CapCut/After Effects template) frame-accurately in Remotion with your own footage: measured cuts, retiming, transitions, text and framing, checked frame by frame against the reference.",
   "author": {
     "name": "Muhammad Ahsan",
@@ -12,13 +12,23 @@
   "license": "MIT",
   "keywords": [
     "video",
-    "remotion",
     "video-editing",
+    "remotion",
     "tiktok",
-    "reels",
+    "instagram-reels",
+    "youtube-shorts",
+    "capcut",
     "after-effects",
+    "after-effects-template",
+    "video-template",
+    "ai-video",
+    "motion-graphics",
+    "frame-interpolation",
+    "background-removal",
     "rife",
     "birefnet",
+    "real-esrgan",
+    "claude-code",
     "skill"
   ]
 }

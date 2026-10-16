@@ -8,6 +8,12 @@ with your own photos and videos swapped in. Instead of eyeballing, Claude **meas
 cut, flash and transition, the speed ramps and slow motion, the camera moves, the text positions and colours.
 Then it **checks its own render against the reference, side by side, frame by frame**, until they match.
 
+**In short:** edit-recreator is a free, open-source (MIT) tool that lets an AI coding agent copy a video edit
+you like, such as a TikTok trend, an Instagram Reel, a YouTube Short, a CapCut template or an After Effects template,
+and rebuild it with your own photos and clips. It does this without After Effects or paid plugins, by rebuilding
+the edit as a [Remotion](https://www.remotion.dev) (React) video. It works best with
+[Claude Code](https://claude.com/claude-code); the method is plain Markdown plus Python scripts, so other agents can follow it too.
+
 It was built while recreating a real birthday edit (a viral After Effects template that needed paid plugins
 we didn't have), and it packages everything that made that work: the tools, the method and the mistakes.
 
@@ -91,6 +97,42 @@ The full method is in [`SKILL.md`](plugins/edit-recreator/skills/recreate-edit/S
 | `sync_check.py` | Proves audio and cuts are identical between two renders |
 | `aep_text.py` | Lists text layers and fonts in an After Effects `.aep` |
 | `fetch_tools.py` | Downloads RIFE, Real-ESRGAN, BiRefNet, GFPGAN from official releases |
+
+## FAQ
+
+**How do I recreate a TikTok or Instagram Reels edit with my own photos and videos?**
+Install the plugin (see [Install](#install)), give Claude Code the reference video and a folder of your clips, and ask
+*"Recreate this edit with my clips."* It measures the reference, lets you pick your shots from pose sheets, builds
+the edit in Remotion and compares it with the original frame by frame.
+
+**Can I use an After Effects template without After Effects?**
+Yes. That is why this tool exists. The reference was an After Effects project that needed paid plugins (Deep Glow,
+Sapphire, BCC, Twitch, RSMB). edit-recreator rebuilds the look from the rendered video instead, so neither After
+Effects nor the plugins are needed. `aep_text.py` can still read text layers and fonts out of an `.aep` file.
+
+**Can it copy a CapCut template?**
+It works from the finished video, so any edit you can download as a video can be the reference, whichever app made it.
+
+**Is it free?**
+The repository is MIT-licensed and every model it downloads is open source. Remotion is free for individuals and
+companies of up to 3 people; larger companies need a Remotion licence (see [Licence](#licence)).
+
+**Which AI models does it use?**
+RIFE for smooth slow motion (frame interpolation), BiRefNet for background removal and cut-outs, Real-ESRGAN for
+optional upscaling, and GFPGAN only as an opt-in comparison version. Everything runs locally; nothing is uploaded.
+
+**Do I need a GPU?**
+No. A Vulkan-capable GPU makes RIFE and Real-ESRGAN much faster, but everything also runs on CPU. It was built on a
+laptop with a 2 GB GPU.
+
+**How accurate is the recreation?**
+See the demo above: the same footage, original left and recreation right. Accuracy comes from measuring every
+frame and checking every frame, not from guessing. The skill will not call a scene done until the side-by-side
+sheets match.
+
+**Does it work with other AI agents besides Claude Code?**
+It is packaged as a Claude Code plugin and skill. The method ([SKILL.md](plugins/edit-recreator/skills/recreate-edit/SKILL.md))
+and scripts are plain Markdown and Python, so any agent that can run shell commands can follow them.
 
 ## Respect people and creators
 

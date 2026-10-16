@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use edit-recreator, please cite it as below."
+title: "edit-recreator: recreate short-form video edits frame by frame in Remotion with your own footage"
+abstract: "A Claude Code plugin and skill that measures a reference video edit (cuts, transitions, retiming, framing, text) and rebuilds it in Remotion with new footage, verified frame by frame against the reference."
+authors:
+  - name: "Muhammad Ahsan"
+    website: "https://github.com/Ahsuu27488"
+repository-code: "https://github.com/Ahsuu27488/edit-recreator"
+url: "https://github.com/Ahsuu27488/edit-recreator"
+license: MIT
+version: 0.1.4
+date-released: 2026-10-16
+keywords:
+  - video editing
+  - remotion
+  - tiktok
+  - instagram reels
+  - capcut template
+  - after effects template
+  - claude code
+  - ai video
+  - frame interpolation
+  - background removal

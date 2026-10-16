@@ -7,7 +7,11 @@
 *Left: the original edit. Right: our Remotion recreation of it from the same template footage.
 Original edit by Rehan Shaikh, Rs Tech 07 ([YouTube @rstech7](https://youtube.com/@rstech7),
 [Instagram @rs_tech_07](https://instagram.com/rs_tech_07)), shown with credit. The original project and its assets are not included in this repository.
-Full 21.6 s side-by-side with sound: [docs/demo.mp4](docs/demo.mp4). The song belongs to its rights holders.*
+The song belongs to its rights holders.*
+
+**Full 21.6 s side-by-side, with sound:**
+
+https://github.com/user-attachments/assets/0fc53d79-6d5c-448a-9282-e66379079776
 
 `edit-recreator` is a [Claude Code](https://claude.com/claude-code) skill and plugin for recreating short-form
 video edits (TikTok, Reels, Shorts, CapCut or After Effects templates) in [Remotion](https://www.remotion.dev),

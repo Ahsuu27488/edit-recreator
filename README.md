@@ -2,6 +2,13 @@
 
 **Give Claude a reference edit and your own clips; get the same edit back, rebuilt frame by frame in code.**
 
+![Original edit (left) and the Remotion recreation (right), same footage](docs/demo.gif)
+
+*Left: the original edit. Right: our Remotion recreation of it from the same template footage.
+Original edit by Rehan Shaikh, Rs Tech 07 ([YouTube @rstech7](https://youtube.com/@rstech7),
+[Instagram @rs_tech_07](https://instagram.com/rs_tech_07)), shown with credit. The original project and its assets are not included in this repository.
+Full 21.6 s side-by-side with sound: [docs/demo.mp4](docs/demo.mp4). The song belongs to its rights holders.*
+
 `edit-recreator` is a [Claude Code](https://claude.com/claude-code) skill and plugin for recreating short-form
 video edits (TikTok, Reels, Shorts, CapCut or After Effects templates) in [Remotion](https://www.remotion.dev),
 with your own photos and videos swapped in. Instead of eyeballing, Claude **measures** the reference: every
@@ -16,13 +23,6 @@ the edit as a [Remotion](https://www.remotion.dev) (React) video. It works best 
 
 It was built while recreating a real birthday edit (a viral After Effects template that needed paid plugins
 we didn't have), and it packages everything that made that work: the tools, the method and the mistakes.
-
-![Original edit (left) and the Remotion recreation (right), same footage](docs/demo.gif)
-
-*Left: the original edit. Right: our Remotion recreation of it from the same template footage.
-Original edit by Rehan Shaikh, Rs Tech 07 ([YouTube @rstech7](https://youtube.com/@rstech7),
-[Instagram @rs_tech_07](https://instagram.com/rs_tech_07)), shown with credit. The original project and its assets are not included in this repository.
-Full 21.6 s side-by-side with sound: [docs/demo.mp4](docs/demo.mp4). The song belongs to its rights holders.*
 
 ## What it does
 

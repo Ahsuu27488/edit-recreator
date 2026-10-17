@@ -52,6 +52,8 @@ we didn't have), and it packages everything that made that work: the tools, the 
 
 [▶ Watch the 40 s launch reel](docs/launch-reel.mp4) (9:16, voice and sound effects)
 
+https://github.com/user-attachments/assets/0060fdb8-24f6-4f89-b34e-07cb3ebe9e7b
+
 Claude made this ad for edit-recreator in Remotion with the same tools. It has a hook on the first frame,
 scenes cut on the voiceover's words, a real motion graph and filmstrip of the reference, a cut-out and
 slow-motion demo, and a before/after wipe that lands on the song's drop. A Hinglish version was built from the

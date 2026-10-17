@@ -1,7 +1,7 @@
 {
   "name": "edit-recreator",
   "displayName": "Edit Recreator",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Recreate any TikTok, Reels, Shorts, CapCut or After Effects template edit with your own photos and clips, frame by frame in Remotion. No After Effects or paid plugins needed: Claude measures every cut, transition, speed ramp, text and framing, then checks its render against the reference until they match.",
   "author": {
     "name": "Muhammad Ahsan",
@@ -29,7 +29,10 @@
     "birefnet",
     "real-esrgan",
     "claude-code",
-    "skill"
+    "skill",
+    "voiceover",
+    "beat-sync",
+    "captions"
   ],
   "documentationUrl": "https://github.com/Ahsuu27488/edit-recreator/blob/main/plugins/edit-recreator/skills/recreate-edit/SKILL.md",
   "supportUrl": "https://github.com/Ahsuu27488/edit-recreator/issues",

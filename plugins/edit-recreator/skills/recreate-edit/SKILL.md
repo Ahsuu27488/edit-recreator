@@ -1,9 +1,9 @@
 ---
 name: recreate-edit
-description: "Recreate a short-form video edit (TikTok / Reels / Shorts / CapCut / After Effects template) frame-accurately in Remotion, with the person's own photos and clips swapped in. Use when someone gives a reference edit and wants 'the same edit but with my footage': matching cuts, timing, slow motion, text, effects and framing, checked frame by frame against the reference."
+description: "Recreate a short-form video edit (TikTok / Reels / Shorts / CapCut / After Effects template) frame-accurately in Remotion, with the person's own photos and clips swapped in. Use when someone gives a reference edit and wants 'the same edit but with my footage': matching cuts, timing, slow motion, text, effects and framing, checked frame by frame against the reference. Also covers the sound: syncing cuts to a song's beats and drop, voiceovers with word-timed captions (several languages from one build), sound effects and loudness."
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.2.0"
   requires: "ffmpeg, Node 18+, Python 3.10+, Remotion 4"
 ---
 
@@ -22,6 +22,7 @@ All helper scripts live in `${CLAUDE_SKILL_DIR}/scripts/`, the Remotion building
 | 1. Analyse the reference | [reference/analyse.md](reference/analyse.md) |
 | 2. Choose and prepare the user's media | [reference/media.md](reference/media.md) |
 | 3. Build scenes and compare | [reference/build.md](reference/build.md) |
+| 4. Sound: song sync, voiceover, SFX, loudness | [reference/sound.md](reference/sound.md) |
 | Pitfalls we hit (read once, early) | [reference/lessons.md](reference/lessons.md) |
 
 ## The loop (every scene, every round)
@@ -67,9 +68,12 @@ All helper scripts live in `${CLAUDE_SKILL_DIR}/scripts/`, the Remotion building
 - `curve.ts`: measured keyframes → smooth eased values. `fx.tsx`: clamp, glow, shake, defocus helpers.
 - `Extruded.tsx` / `extrude.ts`: real CSS-3D extruded title text.
 - `TextAudit.tsx` + `scripts/text-audit.mjs`, `scripts/compare.mjs`: checks driven by `edit.config.json`.
+- `Captions.tsx`: Reels-style word-by-word captions from `vo_words.py` timings.
+- `TimeWarp.tsx`: re-time the whole timeline to another voiceover (another language) through anchor pairs,
+  without rebuilding a scene.
 
 ## Definition of done
 
 Every scene has a dense pair sheet that matches the reference (positions, sizes, colours, timing, motion),
-the text audit passes, `sync_check.py` shows the audio and cuts unchanged between rounds, the person has
+the text audit passes, the audio meets the loudness targets in sound.md, `sync_check.py` shows the audio and cuts unchanged between rounds, the person has
 approved the footage choices, and nothing private is committed.

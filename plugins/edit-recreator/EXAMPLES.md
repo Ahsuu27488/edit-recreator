@@ -91,3 +91,20 @@ so Claude can tell you with numbers whether anything moved, and if not, what cha
 Give each text element `data-text-layer="<name>"`, list them in `edit.config.json`, and run
 `node <kit>/scripts/text-audit.mjs`. It prints each layer's margin to every frame edge, for the letters and the
 glow separately.
+
+## 10. Make an ad or promo reel, synced to a trending sound, in two languages
+
+> "Make a 40-second reel ad for my app, with a voiceover in English and in Hinglish, and time it to Memory Reboot."
+
+Claude will:
+1. Research what hooks and pacing work for the niche, then write a beat-by-beat storyboard and both scripts.
+2. Generate the voiceovers (for example with ElevenLabs), pick voices creators in that language actually use,
+   and level them (`-14 LUFS`). Pause-heavy takes are tightened with `tighten_pauses.py`.
+3. Get word timings (`vo_words.py`) and cut every scene on a word.
+4. Map the song (`song_map.py song.mp3 --land 28.9`) so its drop hits the reveal, and put cuts on beats.
+5. Build the English version, then the second language with `TimeWarp` (no scene rebuilt) and romanised captions.
+6. Render a post version (voice + synthesised SFX, no song) and a private preview with the song, and tell you
+   the exact trim start to set when you add the song in Instagram.
+
+The launch reel in the README was made exactly this way.
+

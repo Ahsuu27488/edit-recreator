@@ -44,6 +44,21 @@ we didn't have), and it packages everything that made that work: the tools, the 
   eased keyframe curves from measurements, real 3D extruded text.
 - **Proves it matches**: dense reference-vs-ours sheets, big ruled comparison frames, a cut-off-text audit,
   and a sync check that proves audio and cuts didn't move between rounds.
+- **Handles the sound**: maps a song's beats and drops and tells you where to start it so the drop lands on
+  your reveal; word-timed voiceover captions; a second language from the same build (`TimeWarp`, no scene
+  rebuilt); synthesised sound effects; loudness to the Reels/Shorts norm (−14 LUFS).
+
+## Launch reel (made with this kit)
+
+[▶ Watch the 40 s launch reel](docs/launch-reel.mp4) (9:16, voice and sound effects)
+
+Claude made this ad for edit-recreator in Remotion with the same tools. It has a hook on the first frame,
+scenes cut on the voiceover's words, a real motion graph and filmstrip of the reference, a cut-out and
+slow-motion demo, and a before/after wipe that lands on the song's drop. A Hinglish version was built from the
+same timeline with `TimeWarp` and a second voiceover. The song (Memory Reboot by VØJ & Narvent) is added in
+Instagram when posting, so it isn't in the file. The footage is the template from Rehan Shaikh's edit,
+credited on screen. How it was made: [reference/sound.md](plugins/edit-recreator/skills/recreate-edit/reference/sound.md)
+and [example 10](plugins/edit-recreator/EXAMPLES.md#10-make-an-ad-or-promo-reel-synced-to-a-trending-sound-in-two-languages).
 
 ## Install
 
@@ -64,7 +79,8 @@ checking sync or getting clean cut-outs: [EXAMPLES.md](plugins/edit-recreator/EX
 ### Requirements
 - ffmpeg, Node 18+, Python 3.10+ (a venv is recommended)
 - `pip install -r plugins/edit-recreator/skills/recreate-edit/requirements.txt`
-  (add `requirements-face.txt` for face tracking and the optional GFPGAN version)
+  (add `requirements-face.txt` for face tracking and the optional GFPGAN version, and
+  `requirements-audio.txt` for beat maps and voiceover timings)
 - Open-source tools and weights, downloaded once from their official releases (nothing is bundled):
   `python plugins/edit-recreator/skills/recreate-edit/scripts/fetch_tools.py`
 - A Vulkan-capable GPU helps RIFE and Real-ESRGAN (they also run on CPU, slowly).
@@ -102,6 +118,10 @@ The full method is in [`SKILL.md`](plugins/edit-recreator/skills/recreate-edit/S
 | `pair_sheet.py` / `pair_hi.py` | Reference-vs-ours sheets (every frame / big and ruled) |
 | `sync_check.py` | Proves audio and cuts are identical between two renders |
 | `aep_text.py` | Lists text layers and fonts in an After Effects `.aep` |
+| `song_map.py` | Tempo, beat grid, drops; the song start that lands a drop on your moment |
+| `vo_words.py` | Word timings of a voiceover (captions, cutting on words) |
+| `tighten_pauses.py` | Caps long pauses in a slow AI voiceover without touching the words |
+| `make_sfx.py` | Synthesises whoosh, hit, stamp, click, riser, ding, glitch (no downloads) |
 | `fetch_tools.py` | Downloads RIFE, Real-ESRGAN, BiRefNet, GFPGAN from official releases |
 
 ## FAQ

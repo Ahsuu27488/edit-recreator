@@ -1,0 +1,3 @@
+# Optional, for the sound phase (reference/sound.md): beat maps and voiceover word timings.
+librosa>=0.10
+faster-whisper>=1.0

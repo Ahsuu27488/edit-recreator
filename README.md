@@ -50,16 +50,16 @@ we didn't have), and it packages everything that made that work: the tools, the 
 
 ## Launch reel (made with this kit)
 
-[▶ Watch the 40 s launch reel](docs/launch-reel.mp4) (9:16, voice and sound effects)
+[▶ Watch the 40 s launch reel](docs/launch-reel.mp4) (9:16, with music, voice and sound effects)
 
-https://github.com/user-attachments/assets/0060fdb8-24f6-4f89-b34e-07cb3ebe9e7b
+https://github.com/user-attachments/assets/eb8a0b67-eda3-41b0-bd8b-2e570b78a89a
 
 Claude made this ad for edit-recreator in Remotion with the same tools. It has a hook on the first frame,
 scenes cut on the voiceover's words, a real motion graph and filmstrip of the reference, a cut-out and
 slow-motion demo, and a before/after wipe that lands on the song's drop. A Hinglish version was built from the
-same timeline with `TimeWarp` and a second voiceover. The song (Memory Reboot by VØJ & Narvent) is added in
-Instagram when posting, so it isn't in the file. The footage is the template from Rehan Shaikh's edit,
-credited on screen. How it was made: [reference/sound.md](plugins/edit-recreator/skills/recreate-edit/reference/sound.md)
+same timeline with `TimeWarp` and a second voiceover. Music: "Memory Reboot" by VØJ & Narvent, used with
+credit; all rights belong to its owners. The footage is the template from Rehan Shaikh's edit, credited on
+screen. How it was made: [reference/sound.md](plugins/edit-recreator/skills/recreate-edit/reference/sound.md)
 and [example 10](plugins/edit-recreator/EXAMPLES.md#10-make-an-ad-or-promo-reel-synced-to-a-trending-sound-in-two-languages).
 
 ## Install
